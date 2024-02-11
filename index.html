@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6e655f454.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id="header">
@@ -32,15 +33,141 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="">
+                <img src="background.jpg">
             </div>
             <div class="about-col-2">
-                <h1>About Me</h1>
-            </div>
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam odio tempora asperiores dolore debitis reiciendis esse in dolores porro ducimus nesciunt tenetur modi, a repellat labore culpa id dicta. Unde.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend</span><br>Web Development</li>
+                        <li><span>Backend</span><br>Web Development</li>
+                        <li><span>Mobile</span><br>App Development</li>
+
+
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020</span><br>Basics of Web Development<br> </li>
+                        <li><span>2022</span><br> Frontend Web Developer</li>
+                        <li><span>2023</span><br>Backend Development<li>
+                        <li><span>2024</span><br>Full Stack Development </li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Pursuing Bachelor's Degree in Computer Science at Egerton University </li>
+                        <li><span>2022</span><br> Frontend Web Developer</li>
+                        <li><span>2023</span><br>Attachee at Postal Corporation of Kenya,Nakuru<li>
+                        <li><span>2024</span><br>Graduated from Egerton University </li>
+
+                    </ul>
+                </div>
+           </div>
 
         </div>
     </div>
 </div>
+
+
+<!--------------SERVICES------------------->
+<div id="services">
+    <div class="container">
+<h1 class="sub-title"> My Services</h1>
+<div class="services-list">
+    <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem iure, molestias doloribus soluta nisi in? Qui, nihil quaerat aut ad, perspiciatis labore quia nemo veritatis voluptatem ducimus sit pariatur sapiente.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem iure, molestias doloribus soluta nisi in? Qui, nihil quaerat aut ad, perspiciatis labore quia nemo veritatis voluptatem ducimus sit pariatur sapiente.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>App Development</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem iure, molestias doloribus soluta nisi in? Qui, nihil quaerat aut ad, perspiciatis labore quia nemo veritatis voluptatem ducimus sit pariatur sapiente.</p>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+
+<!-------portfolio---------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg">
+              <div class="layer">
+                <h3>Neo AI</h3>
+                <p>This AI enables you get answers to alll your questions</p>
+                <a href="https://www.askneo.co/"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>  
+            </div>
+
+            <div class="work">
+                <img class="work3" src="work3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping Website</h3>
+                    <p>This website allows users to purchase products over the internet</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>  
+            </div>
+
+            <div class="work">
+                <img src="work2.jpg">
+                <div class="layer">
+                    <h3>Library Website</h3>
+                    <p>This Website keeps track of  books in the library</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents ){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+
+}
+</script>
 
 </body>
 </html>
