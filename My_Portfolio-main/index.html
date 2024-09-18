@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose Oketch's Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./phoneStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/88d8ad7163.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark menu" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menu" onclick="openMenu()"></i>
+        </nav>
+        <header class="header-section">
+          <div class="header-text">
+            <p>Full-Stack Developer</p>
+
+            <h1>Hi, I'm <span>Rose</span><br />Oketch From Kenya</h1>
+          </div>
+
+          <img class="header-image" src="./images/photoprofile.jpg" alt="" />
+        </header>
+      </div>
+    </div>
+    <!--------------------- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="./images/photoprofile.jpg" alt="" />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Enthusiastic and results-driven Computer Science graduate, with a
+              passion for full-stack development, Product Management and UI/UX
+              design using Figma and a strong proficiency in
+              JavaScript/TypeScript, MySQL, Python, and Java. Eager to
+              contribute innovative solutions and collaborate within dynamic
+              team environments. Experienced in software development through a
+              rewarding attachment at the Postal Corporation of Kenya, Nakuru.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- -----SKILLS -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development <i class="fa-solid fa-code"></i> </span
+                  ><br />Web app Development
+                </li>
+                <li>
+                  <span
+                    >App Development <i class="fa-solid fa-mobile"></i> </span
+                  ><br />Building Android/iOS apps
+                </li>
+                <li>
+                  <span
+                    >UI/UX Design<i class="fa-solid fa-crop-simple"></i> </span
+                  ><br />Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+            <!-- ---------------------EXPERIENCE -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br />
+                  Co-founder of CodeCrafters Bootcamp <br />
+                  an online training
+                  <br />
+                  on programming languages <br />
+                  in kenya,
+                </li>
+                <li>
+                  <span>2022 - Present</span><br />Actively building websites
+                  and apps on freelance
+                </li>
+                <li>
+                  <span>2020 - 2024</span><br />Bachelor of Science in Computer
+                  Science <br />
+                  at Egerton University
+                </li>
+              </ul>
+            </div>
+            <!-- -----------EDUCATION -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2024</span><br />Bachelor of Science in Computer
+                  Science <br />
+                  at Egerton University
+                </li>
+                <li>
+                  <span>2016-2019</span><br />Secondary School Education at
+                  Nyamira Girls High School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I build websites that are both beautiful and functional, tailored
+              to meet the specific needs of my clients. With a keen eye for
+              design and a deep understanding of the latest web technologies, I
+              create websites that not only look great, but also provide an
+              intuitive user experience and optimal performance. Whether it's a
+              simple brochure site or a complex e-commerce platform, I work
+              closely with my clients to ensure that every aspect of the website
+              is optimized to achieve their goals. From concept to launch, I am
+              committed to delivering high-quality, responsive websites that
+              exceed expectations and drive results.
+            </p>
+            <a href="https://www.linkedin.com/in/rose-oyugi-2510a2289/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2>Product Management</h2>
+            <p>
+              I drive product development that addresses real-world challenges
+              and enhances user experiences. With a passion for innovation and a
+              deep understanding of agile methodologies and collaboration tools,
+              I lead teams to deliver high-quality products tailored to meet the
+              unique needs of our users. From ideation to launch, I work closely
+              with cross-functional teams to ensure that every aspect of the
+              product is optimized for success. Proficient in tools like Jira,
+              Git, and GitHub, I manage the entire product lifecycle efficiently
+              and effectively. Whether it's refining user stories, managing
+              sprints, or conducting retrospectives, I ensure that our agile
+              processes foster continuous improvement and collaboration. With a
+              focus on usability, performance, and scalability, I guide teams to
+              build products that not only meet functional requirements but also
+              provide a seamless and engaging user experience. From productivity
+              tools to consumer applications, I am dedicated to staying
+              up-to-date with the latest trends and best practices in product
+              management. This allows me to provide the most innovative and
+              effective solutions possible. If you're looking for a reliable and
+              experienced product manager to bring your ideas to life, look no
+              further. Let's work together to create a product that stands out
+              in today's competitive marketplace.
+            </p>
+            <a href="https://www.linkedin.com/in/rose-oyugi-2510a2289/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I do UI/UX design that focuses on creating intuitive and visually
+              stunning interfaces that enhance user engagement and satisfaction.
+              With a deep understanding of user-centered design principles, I
+              work with my clients to create UI/UX designs that meet their
+              specific goals and needs. From wireframing and prototyping to
+              final design implementation, I am committed to delivering
+              high-quality designs that not only look great but also provide a
+              seamless and engaging experience for users. Whether it's for web
+              or mobile applications, I leverage the latest design tools and
+              technologies to create interfaces that are both functional and
+              aesthetically pleasing. By conducting user research and testing, I
+              ensure that my designs meet the needs of the target audience and
+              deliver the desired results. With a focus on usability,
+              accessibility, and user satisfaction, I strive to create designs
+              that exceed expectations and drive success for my clients.
+            </p>
+            <a href="https://www.linkedin.com/in/rose-oyugi-2510a2289/"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Portfolio
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Our Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work3.png" alt="" />
+            <div class="layer">
+              <h3>myDely App</h3>
+              <p>
+                MyDely is an online B2C and C2C Social E-Commerce application.
+                Download it from Milkychild
+              </p>
+              <a href="https://www.milkychild.com/mydely"
+                ><i
+                  onclick="alert('COMING SOON !')"
+                  class="fa-solid fa-up-right-from-square"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work1.png" alt="" />
+            <div class="layer">
+              <h3>myDate App</h3>
+              <p>
+                myDate is an online dating and geosocial networking application.
+                Download it from Milkychild
+              </p>
+              <a href="https://www.milkychild.com/mydate"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/alanamalemba/" class="btn"
+          >See more</a
+        >
+      </div>
+    </div> -->
+
+    <!-- ------------------------contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <p>
+                <a href="mailto:oyugirose8@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i> email me</a
+                >
+              </p>
+              <p>
+                <a href="tel:+245719146076"
+                  ><i class="fa-solid fa-phone"></i> call me</a
+                >
+              </p>
+              <a href="https://wa.me/254745882352"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://github.com/roseoyugi"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/rose-oyugi-2510a2289/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="./documents/MYCV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Type In Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Rose Oketch
+          <i class="fa-solid fa-laptop-code"></i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
